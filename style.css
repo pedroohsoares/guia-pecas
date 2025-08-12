@@ -157,3 +157,16 @@ section h2 {
     visibility: visible;
     transform: translateY(0);
 }
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-top: 1px solid #374151;
+}
+
+footer .credits {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
