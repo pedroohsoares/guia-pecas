@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Visual de Componentes Robóticos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Guia Visual de Componentes</h1>
+            <p>Material de Apoio para Capacitação em Robótica Educacional</p>
+        </header>
+
+        <section id="projeto-robo">
+            <h2>Projeto 1: Robô Desviador de Obstáculos</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="images/arduino-uno.png" alt="Foto da placa Arduino Uno">
+                    <div class="card-content">
+                        <h3>Arduino Uno</h3>
+                        <p><strong>Função Principal:</strong> É o <strong>cérebro</strong> do robô. Executa o código, lê os sensores e comanda os motores, tomando todas as decisões lógicas.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/protoboard.png" alt="Foto da Protoboard">
+                    <div class="card-content">
+                        <h3>Protoboard</h3>
+                        <p><strong>Função Principal:</strong> A <strong>base de montagem</strong>. Permite conectar componentes eletrônicos de forma temporária e segura, sem necessidade de solda.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/sensor-ultrassonico.png" alt="Foto do Sensor Ultrassônico">
+                    <div class="card-content">
+                        <h3>Sensor Ultrassônico</h3>
+                        <p><strong>Função Principal:</strong> Os <strong>olhos</strong> do robô. Emite ondas sonoras e mede o tempo do eco para calcular com precisão a distância de objetos.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/servo-motor.png" alt="Foto do Micro Servo Motor">
+                    <div class="card-content">
+                        <h3>Micro Servo Motor</h3>
+                        <p><strong>Função Principal:</strong> O <strong>pescoço</strong> do robô. Gira para ângulos específicos para que o sensor possa "olhar" para os lados e procurar rotas de fuga.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/l293d.png" alt="Foto do Driver de Motor L293D">
+                    <div class="card-content">
+                        <h3>Driver de Motor L293D</h3>
+                        <p><strong>Função Principal:</strong> O <strong>controlador</strong> dos motores. Recebe os sinais do Arduino e gerencia a energia de uma fonte externa para controlar a direção (frente/ré) e a velocidade.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/motor-dc.png" alt="Foto de um Motor DC com roda">
+                    <div class="card-content">
+                        <h3>Motores DC com Rodas</h3>
+                        <p><strong>Função Principal:</strong> As <strong>pernas e rodas</strong>. Convertem energia elétrica em movimento, permitindo que o robô se desloque pelo ambiente.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/jumpersmm.png" alt="Foto de jumpers macho-macho">
+                    <div class="card-content">
+                        <h3>Jumpers Macho-Macho</h3>
+                        <p><strong>Função Principal:</strong> Conectar dois pontos com entradas fêmeas. São usados para ligar pontos na protoboard entre si ou para conectar a protoboard aos pinos do Arduino.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/jumpersmf.png" alt="Foto de jumpers macho-fêmea">
+                    <div class="card-content">
+                        <h3>Jumpers Macho-Fêmea</h3>
+                        <p><strong>Função Principal:</strong> Conectar um pino macho a uma entrada fêmea. São essenciais para ligar componentes que já têm pinos (como o Sensor Ultrassônico) diretamente ao Arduino ou à protoboard.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projeto-semaforo">
+            <h2>Projeto 2: Semáforo Inteligente</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="images/leds.png" alt="Foto de LEDs coloridos">
+                    <div class="card-content">
+                        <h3>LEDs</h3>
+                        <p><strong>Função Principal:</strong> Os <strong>sinalizadores visuais</strong>. O Arduino acende a cor correspondente (verde, amarelo, vermelho) para indicar o nível de proximidade detectado.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/resistor.png" alt="Foto de um resistor">
+                    <div class="card-content">
+                        <h3>Resistores</h3>
+                        <p><strong>Função Principal:</strong> Os <strong>protetores</strong> dos LEDs. Limitam a corrente elétrica para garantir que o LED receba apenas a energia necessária para acender, sem queimar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <button id="back-to-top" title="Voltar ao topo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
